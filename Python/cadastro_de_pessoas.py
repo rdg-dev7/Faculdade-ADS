@@ -15,13 +15,7 @@ while True:
 
     linha()
 
-    opcao = ' '
-    while opcao not in "SN":
-        opcao = str(input("Quer continuar: ")).strip().upper()[0]
-    if opcao == "N":
-        break
-
-
+    
     if idade >= 18:
         mais_dezoito += 1
 
@@ -30,6 +24,12 @@ while True:
 
     if sexo == "F" and idade < 20:
         mulher_menos20 += 1
+
+    opcao = ' '
+    while opcao not in "SN":
+        opcao = str(input("Quer continuar: ")).strip().upper()[0]
+    if opcao == "N":
+        break   
 
 linha()
 print("====== FIM DO PROGRAMA ======")
